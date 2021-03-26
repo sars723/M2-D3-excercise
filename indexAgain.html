@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+  .img-responsive {
+   max-width: 100%;
+  background-color: brown;
+  border: black 1px solid;
+}
+
+
+    h1{
+      font-size: 50px;
+    }
+    footer a{
+      color:black;
+    }
+    
+    </style>
+  </head>
+  <body>
+  <!--   Ex 1) Implement a navigation bar, connected to all the sections of the page. 
+         Ex 2) Add a logo into the navigation bar (can be any image) -->
+<div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#"><img src="/images/travel-logo.jpg" class="rounded-circle " width="40" height="40"  alt="..."></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 text-dark" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+<header>
+  
+    <div class="row mt-5 mb-4">
+      <div class="col-6 text-center pt-5">
+          <h1>Lets Make Your Best Trip Ever</h1>
+      </div>
+      <div class="col-6 ">
+        <img src="/images/travel4.jpg" class="img-fluid" style=" max-width: 100%;  height: auto; " alt="">
+    </div>
+    </div>
+
+ 
+</header>
+      <!-- Ex 3) Add a Jumbotron section in which you'll have the name and the claim of the tour operator -->
+
+    <section>
+
+      
+        <div class="row">
+    <div class="col-12">
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#jumbTron">Find More</button>
+          <div id="jumbTron" class="jumbotron  collapse">
+            <h1 class="display-4">SSH Travel Agency</h1>
+            <p class="lead">When it comes to your final destination, we’ve most likely been there, done that. 
+              Not only can we plan your dream vacation, we can make recommendations while keeping the local culture, 
+              weather and more in mind. Be sure to ask us about our favorite restaurants, tour guides, shopping locations and more!</p>
+            <hr class="my-4">
+            <p>We take the stress of planning and managing a vacation so you can focus on what matters most – enjoying yourself.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Plan your Trip</a>
+          </div>
+    </div>
+
+        </div>
+      
+    </section>
+       <!--  Ex 4) Implement the "Deal of the Week" section. In this section you'll display 4 destinations.
+         In this section you should have:
+            - 4 destinations per row when the screen is very large
+            - 3 destinations per row when you are on a tablet (or a smaller window)
+            - 2 destinations per row when you are on a small screen
+
+            
+ -->
+
+<div class="container">
+ <section>
+   <div class="row">
+          <div class="col-12 text-center mb-3"><h2>Deal of the week</h2></div>
+          <div class="col-6 col-md-4 col-lg-3">
+              <div id="destination1">
+                  <h4>Australia</h4>
+                  <img src="/images/travel.jpg" class="img-responsive" alt="">
+              </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div id="destination2">
+                <h4>Australia</h4>
+                <img src="/images/travel2.jpg" class="img-responsive" alt="">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+           <div id="destination3">
+              <h4>Australia</h4>
+              <img src="/images/travel3.jpg" class="img-responsive" alt="">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div id="destination4">
+              <h4>Australia</h4>
+              <img src="/images/travel5.jpg" class="img-responsive" alt="">
+            </div>
+          </div>
+
+   </div>
+ </section></div>
+        <!-- Ex 5) Implement the "Welcome Summer" section. In this section you'll propose 6 destinations to your user
+            In this section you should have:
+                - 6 destinations per row when the screen is very large
+                - 3 destinations per row when you are on a tablet (or a smaller window)
+                - 2 destinations per row when you are on a small screen -->
+
+        <!-- Ex 8) Add to the Welcome Summer destinations section a large shadow -->
+
+                  <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#section3">Find More</button>
+                  <section id="section3"> -->
+                  <div class="container shadow-lg p-3 mb-5 bg-white rounded">
+                  
+                    <div class="row">
+                           <div class="col-12 text-center mt-5 mb-3"><h2>Welcome Summer</h2></div>
+                         
+
+                           <div class="col-6 col-md-4 col-lg-2">
+                               <div id="destination1">
+                                   <h4>Australia</h4>
+                                   <img src="/images/travel.jpg" class="img-responsive" alt="">
+                               </div>
+                           </div>
+                           <div class="col-6 col-md-4 col-lg-2">
+                             <div id="destination2">
+                                 <h4>Australia</h4>
+                                 <img src="/images/travel2.jpg" class="img-responsive" alt="">
+                             </div>
+                           </div>
+                           <div class="col-6 col-md-4 col-lg-2">
+                            <div id="destination3">
+                               <h4>Australia</h4>
+                               <img src="/images/travel3.jpg" class="img-responsive" alt="">
+                             </div>
+                           </div>
+                           <div class="col-6 col-md-4 col-lg-2">
+                             <div id="destination4">
+                               <h4>Australia</h4>
+                               <img src="/images/travel5.jpg" class="img-responsive" alt="">
+                             </div>
+                           </div>
+                           <div class="col-6 col-md-4 col-lg-2">
+                            <div id="destination5">
+                              <h4>Australia</h4>
+                              <img src="/images/travel6.jpg" class="img-responsive" alt="">
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-4 col-lg-2">
+                            <div id="destination6">
+                              <h4>Australia</h4>
+                              <img src="/images/travel7.jpg" class="img-responsive" alt="">
+                            </div>
+                          </div>
+                 
+                    </div>
+                  </section></div>
+        
+        <!-- Ex 6) Implement a "Deal of the day" section. In this section you'll have:
+            - 66% of the page with a picture of the destination
+            - 33% with Name, dates, price and a short description -->
+        <!-- Ex 7) Make the "Deal of the day" section disappear on a mobile screens -->
+
+<div class="container d-none d-sm-block">
+            <section>
+              <div class="row mt-5 text-center">
+                <div class="col"><h2>Deal of the Day</h2></div>
+              </div>
+              <div class="row mt-3 ">
+                <div class="col-8 ">
+                  <img src="https://source.unsplash.com/random/800x600" class="img-responsive" alt="">
+                </div>
+                <div class=" col-4">
+                  <h4>New Orleans</h4>
+                  <h5>offer until 22/04/21</h5>
+                  <h6>600 euro for 7 nights with breakfast</h6>
+                  <p>New Orleans never goes out of style, though for a moment, with 2021’s Mardi Gras
+                     parade season called off due to crowd concerns, it looked as if next year would be 
+                     a low point for the city. </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+       <!-- <div class="container">
+         <div class="row ">
+          <div class="card-deck">
+            <div class="card" >
+              <img src="images/travel8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">South Island, New Zealand</h5>
+                <p class="card-text">#1 in World's Best Places to Visit
+                  New Zealand's South Island brims with majestic landscapes at every turn, from dramatic mountains to fjords to glaciers.</p>
+                <a href="#" class="btn btn-primary bi bi-house">BEST HOTELS</a>
+              </div>
+            </div>
+            <div class="card" >
+              <img src="images/travel9.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bora Bora</h5>
+                <p class="card-text">#3 in World's Best Places to Visit
+                  What this small island may lack in size it makes up for in sheer tropical beauty. Here, you'll find picturesque beaches, lush jungles and luxurious resorts.</p>
+                <a href="#" class="btn btn-primary bi bi-house">BEST HOTELS</a>
+              </div>
+            </div>
+            <div class="card" >
+              <img src="images/travel10.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Glacier National Park</h5>
+                <p class="card-text">4 in World's Best Places to Visit
+                  Snow-capped peaks and azure lakes are just two reasons why Glacier National Park is one of the most-visited parks in the United States. There are more than 700 miles of hiking trails in this Montana park, plus 13 designated areas for camping.</p>
+                <a href="#" class="btn btn-primary bi bi-house">BEST HOTELS</a>
+              </div>
+            </div>
+            <div class="card" >
+              <img src="images/travel11.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">London</h5>
+                <p class="card-text">#5 in World's Best Places to Visit
+                  London is a world unto itself. The eclectic neighborhoods, which house a blend of historical landmarks and modern-day attractions, can keep you occupied for days. If it's your first time in London, save time for a visit to the Tower of London, Tate Modern, Buckingham Palace or the British
+                   Museum before sitting down to a classic afternoon tea.</p>
+                <a href="#" class="btn btn-primary bi bi-house">BEST HOTELS</a>
+              </div>
+            </div>
+            <div class="card" >
+              <img src="images/travel12.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Maui</h5>
+                <p class="card-text">#6 in World's Best Places to Visit
+                  Whether you're driving along the Road to Hana, enjoying a bird's-eye view of the lush coastline from a helicopter, snorkeling with sea turtles or simply relaxing on the island's honey- or black-colored beaches, you'll find that Maui is unlike any other tropical destination.</p>
+                <a href="#" class="btn btn-primary bi bi-house">BEST HOTELS</a>
+              </div>
+            </div>
+            <div class="card" >
+              <img src="images/travel13.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tahiti</h5>
+                <p class="card-text">#7 in World's Best Places to Visit
+                  Travel to this island – the largest in French Polynesia – if you've been dreaming of a vacation spent lazing in a lavish overwater bungalow. Beyond the posh resorts, Tahiti
+                   boasts black sand beaches, a bustling capital and prime snorkeling and surfing conditions.</p>
+                <a href="#" class="btn btn-primary bi bi-house">BEST HOTELS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+        <!-- Ex 9) Create a section Last Minute, in which you'll display the pictures from the destinations as Cards -->
+        
+<div class="container mt-5 p-3 mb-5">
+        <section>
+         
+          <div class="row text-center mt-5 mb-3">
+            <div class="col-12">
+              <h2>Last Minute</h2>
+            </div>
+          </div>
+          <div class="card-deck">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 px-1">
+              
+              <div class="card" style="width: 18rem;">
+                <img src="images/travel8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">South Island, New Zealand</h5>
+                  <p class="card-text">#1 in World's Best Places to Visit
+                    New Zealand's South Island brims with majestic landscapes at every turn, from dramatic mountains to fjords to glaciers.</p>
+                  <a href="#" class="btn btn-primary bi bi-house">BEST HOTELS</a>
+                </div>
+              </div>
+            </div>
+              <div class="col-12 col-md-6 col-lg-3 px-1">
+                <div class="card" style="width: 18rem;">
+                  <img src="images/travel9.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Bora Bora</h5>
+                    <p class="card-text">#3 in World's Best Places to Visit
+                      What this small island may lack in size it makes up for in sheer tropical beauty. Here, you'll find picturesque beaches, lush jungles and luxurious resorts.</p>
+                    <a href="#" class="btn btn-primary bi bi-house">BEST HOTELS</a>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 px-1">
+                  <div class="card" style="width: 18rem;">
+                    <img src="images/travel10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Glacier National Park</h5>
+                      <p class="card-text">4 in World's Best Places to Visit
+                        Snow-capped peaks and azure lakes are just two reasons why Glacier National Park is one of the most-visited parks in the United States. There are more than 700 miles of hiking trails in this Montana park, plus 13 designated areas for camping.</p>
+                      <a href="#" class="btn btn-primary bi bi-house">BEST HOTELS</a>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-12 col-md-6 col-lg-3 px-1">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/travel11.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">London</h5>
+                        <p class="card-text">#5 in World's Best Places to Visit
+                          London is a world unto itself. The eclectic neighborhoods, which house a blend of historical landmarks and modern-day attractions, can keep you occupied for days. If it's your first time in London, save time for a visit to the Tower of London, Tate Modern, Buckingham Palace or the British
+                           Museum before sitting down to a classic afternoon tea.</p>
+                        <a href="#" class="btn btn-primary bi bi-house">BEST HOTELS</a>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-12 col-md-6 col-lg-6 px-1">
+                      <div class="card" style="width: 18rem;">
+                        <img src="images/travel12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Maui</h5>
+                          <p class="card-text">#6 in World's Best Places to Visit
+                            Whether you're driving along the Road to Hana, enjoying a bird's-eye view of the lush coastline from a helicopter, snorkeling with sea turtles or simply relaxing on the island's honey- or black-colored beaches, you'll find that Maui is unlike any other tropical destination.</p>
+                          <a href="#" class="btn btn-primary bi bi-house">BEST HOTELS</a>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="col-12 col-md-6 col-lg-6 px-1">
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/travel13.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Tahiti</h5>
+                            <p class="card-text">#7 in World's Best Places to Visit
+                              Travel to this island – the largest in French Polynesia – if you've been dreaming of a vacation spent lazing in a lavish overwater bungalow. Beyond the posh resorts, Tahiti
+                               boasts black sand beaches, a bustling capital and prime snorkeling and surfing conditions.</p>
+                            <a href="#" class="btn btn-primary bi bi-house">BEST HOTELS</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+            
+          </div>
+
+        </section>
+</div>
+
+        <!-- Ex 10) Create a "Testimonial" section, in which the user can find several feedbacks from fake customers -->
+        
+<div class="container">
+        <section>
+          <div class="row my-5">
+            <div class="col-12 text-center">
+              <h2>Testimonials</h2>
+            </div>
+          </div>
+          <div class="row text-center"> 
+            <div class="col-1 col-md-2 mb-5"><h2>"</h2></div>
+             <div class="col-11 col-md-10 mb-5">
+               <p>I was on a United flight departing from Honolulu 
+                 when the take-off was aborted due to engine trouble. 
+                 With over 300 people on board, there were many people
+                  who were going to have to rebook their travel.
+                   Not only was I able to get booked ahead of the throngs
+                    of the others because of SSH Travel a Direct 
+                    Travel Company’s quick actions, but my agent also 
+                    secured the first-class seating I had requested.
+
+                <br><br>Michael A.</p>
+
+            </div>
+           
+            <div class="col-11 col-md-10 mb-5">
+              <p>IProfessional Travel a Direct Travel Company helped us plan a family trip to trace our roots in Portugal and Italy. They arranged group and private tours with local drivers and guides we never could have found on our own. We could not have planned – or enjoyed – this once-in-a-lifetime experience without your planning, expertise and connections!
+
+                <br><br>  Michele T.</p>
+
+           </div>
+
+           <div class="col-1 col-md-2 mb-5"><h2>"</h2></div>
+
+            <div class="col-1 col-md-2 mb-5"><h2>"</h2></div>
+           <div class="col-11 col-md-10 mb-5">
+            <p>I was recently in San Francisco with family on vacation and had flights cancelled due to mechanical trouble. My daughter has an immune system deficiency and needed to get home for a treatment. The rescheduled flight could not accommodate her treatment, so I called Professional Travel a Direct Travel Company looking for help. Your agent found an alternative that I could not have found on my own. Thank you!
+
+              <br><br>  Brian D.</p>
+
+         </div>
+         
+
+           
+          </div>
+        </section>
+      
+</div>
+        <!-- Ex 11) Create a footer with the company information and a button "Contact Us"
+ -->
+<footer class="page-footer font-small stylish-color-dark pt-4">
+ <div class="container text-center text-md-left">
+  
+     <div class="row bg-info">
+       <div class="col-12 mx-auto">
+
+        
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Contact Us</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+    </li>
+  </ul>
+       </div>
+  <div class="col-12 mx-auto">
+
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#"> SSH.com</a>
+  </div>
+  
+
+       </div>
+     </div>
+    </div>
+   </footer>
+ 
+        <!-- Ex 11) Create a button next to each section to collapse and reopen the given section -->
+   </div>
+   <script>
+     console.log("helo")
+
+
+    /*  Ex 12) Create a method that counts the number of "travels" on the page */
+
+
+       /*  Ex 13) Create a modal view with a message and a email field */
+        /* Ex 14) When the user clicks on "contact us" the modal is displayed */
+        /* Ex 15) Create a function that adds a "HOT" badge to all the "Welcome Summer" offers */
+        /* Ex 16) Create a function to delete all "cards" from the page */
+
+      const deleteCards=function(){
+        const card=document.getElementsByClassName("card")
+        card.forEach(element => {
+          card.
+          
+        });
+      }
+   </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+ <!--
+
+        ASSIGNMENT RULES
+        - This challenge should be done in couples, go in Eduflow to find who you are paired with
+        - Implement one exercise each, switching side from driver and navigator frequently
+        - We suggest you to use Zoom or Google Hangouts to speak and look at each other throughout the whole activity
+
+        - The exercise must be pushed to the repository and linked on EduFlow by the end of the day
+        - You can google / use StackOverflow BUT we suggest you to use just the material provided
+        - To test the page, open it with your browser and use the inspector.
+        - Use Bootstrap4.6 classes to arrange the page layout and components.
+        - Use containers, rows and cols in order to have a working responsive layout.
+
+
+        EXERCISE: 
+        You are implementing a website for a Travel Agency.
+        In the page you will add all the destination you're dreaming to go to in the near future!
+
+
+        Ex 1) Implement a navigation bar, connected to all the sections of the page. 
+        Ex 2) Add a logo into the navigation bar (can be any image)
+        Ex 3) Add a Jumbotron section in which you'll have the name and the claim of the tour operator
+        Ex 4) Implement the "Deal of the Week" section. In this section you'll display 4 destinations.
+         In this section you should have:
+            - 4 destinations per row when the screen is very large
+            - 3 destinations per row when you are on a tablet (or a smaller window)
+            - 2 destinations per row when you are on a small screen
+
+        Ex 5) Implement the "Welcome Summer" section. In this section you'll propose 6 destinations to your user
+            In this section you should have:
+                - 6 destinations per row when the screen is very large
+                - 3 destinations per row when you are on a tablet (or a smaller window)
+                - 2 destinations per row when you are on a small screen
+        
+        Ex 6) Implement a "Deal of the day" section. In this section you'll have:
+            - 66% of the page with a picture of the destination
+            - 33% with Name, dates, price and a short description
+
+        Ex 7) Make the "Deal of the day" section disappear on a mobile screens
+        Ex 8) Add to the Welcome Summer destinations section a large shadow
+        Ex 9) Create a section Last Minute, in which you'll display the pictures from the destinations as Cards
+        Ex 10) Create a "Testimonial" section, in which the user can find several feedbacks from fake customers
+        Ex 11) Create a footer with the company information and a button "Contact Us"
+
+        Ex 11) Create a button next to each section to collapse and reopen the given section
+        Ex 12) Create a method that counts the number of "travels" on the page
+        Ex 13) Create a modal view with a message and a email field
+        Ex 14) When the user clicks on "contact us" the modal is displayed
+        Ex 15) Create a function that adds a "HOT" badge to all the "Welcome Summer" offers
+        Ex 16) Create a function to delete all "cards" from the page
